@@ -1,3 +1,6 @@
+# php version
+> php version > 7.0
+
 # install and run
 * 1. git clone https://github.com/gytai/app-download.git
 * 2. composer udpate
