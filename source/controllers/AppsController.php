@@ -18,6 +18,11 @@ class AppsController extends Controller
         return parent::beforeAction($action);
     }
 
+    public function actionIndex()
+    {
+        return $this->render('app-list');
+    }
+
     /**
      * Displays homepage.
      *
@@ -48,6 +53,18 @@ class AppsController extends Controller
         $response = Yii::$app->response;
         $response->format = Response::FORMAT_JSON;
 
+        $session = Yii::$app->session;
+        $account = $session->get('account');
+
+        if(empty($account)){
+            $response->data = array(
+                'code' => 400,
+                'msg' => 'please login first'
+            );
+            return $response->send();
+        }
+
+
         $uid = $request->post('uid');
         if( empty($uid)){
             $response->data = array(
@@ -76,6 +93,17 @@ class AppsController extends Controller
         $request = Yii::$app->request;
         $response = Yii::$app->response;
         $response->format = Response::FORMAT_JSON;
+
+        $session = Yii::$app->session;
+        $account = $session->get('account');
+
+        if(empty($account)){
+            $response->data = array(
+                'code' => 400,
+                'msg' => 'please login first'
+            );
+            return $response->send();
+        }
 
         $name= $request->post('name');
         $version = $request->post('version');
@@ -123,7 +151,7 @@ class AppsController extends Controller
         $appName = $rootPath . time() . rand( ). '.' . $ext;
         $app->saveAs($appName);
 
-        $ret = Apps::appAdd($name,$rootPath . $appName,$rootPath . $imageName,$version);
+        $ret = Apps::appAdd($name, $appName, $imageName,$version);
 
         if($ret) {
             $this->redirect(Url::toRoute(['site/index']));

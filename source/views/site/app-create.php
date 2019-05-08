@@ -9,7 +9,7 @@
             <input type="text" class="form-control" name="version" id="version">
         </div>
         <div class="form-group">
-            <label for="icon" >App Icon</label>
+            <label for="icon" >App Image</label>
             <input type="file" name="icon" id="icon" accept="image/gif,image/jpeg,image/jpg,image/png">
         </div>
         <div class="form-group">
