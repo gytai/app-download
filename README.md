@@ -1,7 +1,7 @@
 # dev env
-> yii2 framework(php version > 7.0)
-> bootstrap 3.x
-> sui mobile 
+* yii2 framework(php version > 7.0)
+* bootstrap 3.x
+* sui mobile 
 
 # install and run
 * 1. git clone https://github.com/gytai/app-download.git
