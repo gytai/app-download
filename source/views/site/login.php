@@ -63,7 +63,7 @@
                     if(response.code == 200){
                         layer.msg('login success', {icon: 1});
                         setTimeout(function () {
-                            location.href = '/index.php?r=site/index';
+                            location.href = '/index.php?r=site/apps';
                         },1000);
                     }else{
                         layer.msg('account or password is invalid', {icon: 5});
