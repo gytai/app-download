@@ -1,4 +1,4 @@
-# dev env
+# development env
 * yii2 framework(php version > 7.0)
 * bootstrap 3.x
 * sui mobile 
