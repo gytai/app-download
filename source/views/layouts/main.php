@@ -79,7 +79,7 @@
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">NAVIGATION</li>
-                <li id="appMenu" class="tree-menu active" @click="clickMenu('appMenu')"><a href="/index.php?r=site"><i class="fa fa-circle-o"></i>App Manage</a></li>
+                <li id="appMenu" class="tree-menu active" @click="clickMenu('appMenu')"><a href="/index.php?r=site/apps"><i class="fa fa-circle-o"></i>App Manage</a></li>
                 <li id="settingMenu" class="tree-menu" @click="clickMenu('settingMenu')"><a href="/index.php?r=site/setting"><i class="fa fa-circle-o"></i>Setting</a></li>
             </ul>
         </section>

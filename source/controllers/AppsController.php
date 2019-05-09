@@ -18,11 +18,6 @@ class AppsController extends Controller
         return parent::beforeAction($action);
     }
 
-    public function actionIndex()
-    {
-        return $this->render('app-list');
-    }
-
     /**
      * Displays homepage.
      *

@@ -16,12 +16,17 @@ class SiteController extends Controller
         return parent::beforeAction($action);
     }
 
+    public function actionIndex()
+    {
+        return $this->render('app-list');
+    }
+
     /**
      * Displays homepage.
      *
      * @return string
      */
-    public function actionIndex()
+    public function actionApps()
     {
         $session = Yii::$app->session;
         $account = $session->get('account');
