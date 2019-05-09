@@ -7,7 +7,7 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="/dist/css/AdminLTE.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,8 +16,8 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="layer/layer.js"></script>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/layer/layer.js"></script>
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">

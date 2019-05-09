@@ -8,12 +8,12 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
     <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="/dist/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="/dist/css/skins/_all-skins.min.css">
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="/css/bootstrap.min.css" >
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,14 +22,14 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="/js/jquery-3.4.1.min.js"></script>
 
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="js/bootstrap.min.js" ></script>
-    <script src="dist/js/AdminLTE.js"></script>
+    <script src="/js/bootstrap.min.js" ></script>
+    <script src="/dist/js/AdminLTE.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="layer/layer.js"></script>
+    <script src="/layer/layer.js"></script>
 
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -49,7 +49,7 @@
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class=" user user-menu">
                         <a href="#" class="dropdown-toggle">
-                            <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                            <img src="/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
                             <span class="hidden-xs"><?= $this->params['account'];   ?></span>
                         </a>
                     </li>
@@ -69,7 +69,7 @@
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    <img src="/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
                     <p><?= $this->params['account'];   ?></p>
